@@ -5,7 +5,7 @@ const getdata= async()=>{
     document.getElementById("dog-img").innerHTML=""
 
     try{
-        let res = await  fetch("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo'")
+        let res = await  fetch("https://dog.ceo/api/breeds/image/random")
         let data= await res.json()
 
         let img=document.createElement("img")
